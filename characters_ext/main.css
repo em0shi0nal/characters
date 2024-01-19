@@ -1,0 +1,8 @@
+
+img#random_image {
+    top: 75vh;
+    position: fixed;
+    z-index: 2;
+    transition: ease-in 0.2s;
+}
+
