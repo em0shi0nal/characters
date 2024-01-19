@@ -12,7 +12,7 @@ How to install:
 Also works on firefox. instead you go to "debug add-ons" >> "load temporary add-on"
 
 controls: 
-W : jump 
-A " left 
-D : right 
-click : change characters
+W - jump 
+A - left 
+D - right 
+click - change characters
