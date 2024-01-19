@@ -9,7 +9,7 @@ How to install:
 6. upload the entire folder you just downloaded
 7. and you are done !
 
-Also works on firefox. instead you go to "debug add-ons" >> "load temporary add-on"
+Also works on firefox. instead you go to "debug add-ons" >> "load temporary add-on" and upload the 'manifest.json' file
 
 controls: 
 W - jump,
