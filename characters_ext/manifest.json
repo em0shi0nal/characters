@@ -1,30 +1,35 @@
 {
-    "manifest_version" : 3,
-    "name": "Characters",
-    "description": "Adds characters on html page",
-    "version": "0.1.0",
-    "icons": {
-        "16": "/images/chrome_ext16.png",
-        "48" : "/images/chrome_ext48.png",
-        "128": "/images/chrome_ext128.png"
-    },
+  "manifest_version": 3,
+  "name": "Characters",
+  "description": "Adds characters on html page",
+  "version": "0.1.0",
 
-    "web_accessible_resources": ["characters/*.gif"],
-        
-    "page_action": {
-      "default_icon": {
-        "16": "/images/chrome_ext16.png",
-        "48": "/images/chrome_ext48.png",
-        "128": "/images/chrome_ext128.png"
-      }
-    },
+  "icons": {
+    "16": "images/chrome_ext16.png",
+    "48": "images/chrome_ext48.png",
+    "128": "images/chrome_ext128.png"
+  },
 
-    "content_scripts": [
-        {
-        "matches": ["<all_urls>"], 
-        "css": ["main.css"],
-        "js": ["main.js", "inputHandler.js"]
-    }]
+  "action": {
+    "default_icon": {
+      "16": "images/chrome_ext16.png",
+      "48": "images/chrome_ext48.png",
+      "128": "images/chrome_ext128.png"
+    }
+  },
 
-   
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["main.css"],
+      "js": ["main.js", "inputHandler.js"]
+    }
+  ],
+
+  "web_accessible_resources": [
+    {
+      "resources": ["characters/*.gif"],
+      "matches": ["<all_urls>"]
+    }
+  ]
 }
